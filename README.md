@@ -23,9 +23,9 @@ REGISTER YOUR MODULE
 Register your module with your application by editing `tiapp.xml` and adding your module.
 Example:
 
-<modules>
-	<module version=“1.0”>com.dezinezync.dzyapdatabase</module>
-</modules>
+    <modules>
+	    <module version=“1.0”>com.dezinezync.dzyapdatabase</module>
+    </modules>
 
 LICENSE
 -------
