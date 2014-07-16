@@ -1,6 +1,6 @@
 [submodule "vendors/DZYapDatabase"]
 	path = vendors/DZYapDatabase
-	url = https://github.com/dezinezync/DZYAPDatabase.git
+	url = git@github.com:dezinezync/DZYAPDatabase.git
 [submodule "vendors/YapDatabase"]
 	path = vendors/YapDatabase
-	url = git@github.com:yaptv/YapDatabase.git
+	url = git@github.com:dezinezync/YapDatabase.git
