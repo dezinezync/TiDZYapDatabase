@@ -10,6 +10,17 @@ APIs
 ---
 Check the example/app.js file for the various APIs, parameters, usage and remarks on the same.
 
+DOWNLOAD
+--------
+You can download a compiled copy of the module from the Releases section. Minimum supported: iOS 7.
+
+BUILDING
+--------
+If you'd like to tweak the module, after cloing the repo, you must initialize the submodules like so:
+
+	git submodule init
+	git submodule update
+
 INSTALL YOUR MODULE
 --------------------
 
