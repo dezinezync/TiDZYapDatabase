@@ -1,7 +1,7 @@
 TiDZYapDatabase
 ===============
 
-Titanium Wrapper for DZYapDatabase. 
+Titanium Wrapper for DZYapDatabase. (**Exclusive Release for TiConf 2014 BLR**)
 
 > YapDatabase is a "key/value store and MUCH MORE" built atop sqlite for iOS & Mac.  
 > \- YapDatabase Main Repo
