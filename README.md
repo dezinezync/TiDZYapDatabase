@@ -35,7 +35,7 @@ Register your module with your application by editing `tiapp.xml` and adding you
 Example:
 
     <modules>
-	    <module version=“1.0”>com.dezinezync.dzyapdatabase</module>
+	    <module version=“1.1”>com.dezinezync.dzyapdatabase</module>
     </modules>
 
 LICENSE
