@@ -8,11 +8,16 @@
 
 @interface ComDezinezyncDzyapdatabaseModule : TiModule 
 
+- (void)setPassphrase:(id)args;
+
 #pragma mark - SET
 - (void)set:(id)args;
 - (void)setNX:(id)args;
 - (void)setInCollection:(id)args;
 - (void)setNXInCollection:(id)args;
+
+- (void)setSecure:(id)args;
+- (void)setSecureInCollection:(id)args;
 
 #pragma mark - GET
 - (void)getValue:(id)args;

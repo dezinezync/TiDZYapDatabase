@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3236DC53-D41B-4769-9369-242EE3DB6598</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TiDZYapDatabase</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2EA87689-3FCB-443B-ABD1-9BF93AC2B3A9</key>
+		<string>ssh://github.com/dezinezync/DZYAPDatabase.git</string>
+		<key>788CC4EA-3FCD-43F4-9372-9689075EDAD2</key>
+		<string>ssh://github.com/dezinezync/TiDZYapDatabase.git</string>
+		<key>FE483443-A801-41ED-A9CE-F3921D3F20E0</key>
+		<string>ssh://github.com/dezinezync/YapDatabase.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TiDZYapDatabase.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2EA87689-3FCB-443B-ABD1-9BF93AC2B3A9</key>
+		<string>../../vendors/DZYapDatabase</string>
+		<key>788CC4EA-3FCD-43F4-9372-9689075EDAD2</key>
+		<string>../..</string>
+		<key>FE483443-A801-41ED-A9CE-F3921D3F20E0</key>
+		<string>../../vendors/YapDatabase</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/dezinezync/TiDZYapDatabase.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>788CC4EA-3FCD-43F4-9372-9689075EDAD2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2EA87689-3FCB-443B-ABD1-9BF93AC2B3A9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DZYapDatabase</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>788CC4EA-3FCD-43F4-9372-9689075EDAD2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TiDZYapDatabase</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FE483443-A801-41ED-A9CE-F3921D3F20E0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YapDatabase</string>
+		</dict>
+	</array>
+</dict>
+</plist>

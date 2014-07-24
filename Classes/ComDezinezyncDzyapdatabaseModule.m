@@ -83,6 +83,13 @@
 
 #pragma Public APIs
 
+- (void)setPassphrase:(id)args
+{
+    
+    [DZYAPDatabase setEncryptionKey:args];
+    
+}
+
 - (void)set:(id)args
 {
     
@@ -94,7 +101,7 @@
     ENSURE_ARG_AT_INDEX(key, args, 0, NSString);
     
     value = [args objectAtIndex:1];
-    callback = [args objectAtIndex:2];
+    callback = [args count] > 2 ? [args objectAtIndex:2] : nil;
     
     if(key && value)
     {
@@ -124,7 +131,7 @@
     ENSURE_ARG_AT_INDEX(key, args, 0, NSString);
     
     value = [args objectAtIndex:1];
-    callback = [args objectAtIndex:2];
+    callback = [args count] > 2 ? [args objectAtIndex:2] : nil;
     
     if(key && value)
     {
@@ -156,7 +163,7 @@
     ENSURE_ARG_AT_INDEX(collection, args, 1, NSString);
     
     value = [args objectAtIndex:2];
-    callback = [args objectAtIndex:3];
+    callback = [args count] > 3 ? [args objectAtIndex:3] : nil;
     
     if(key && value)
     {
@@ -198,7 +205,7 @@
     ENSURE_ARG_AT_INDEX(collection, args, 1, NSString);
     
     value = [args objectAtIndex:2];
-    callback = [args objectAtIndex:3];
+    callback = [args count] > 3 ? [args objectAtIndex:3] : nil;
     
     if(key && value)
     {
@@ -210,6 +217,79 @@
         else
         {
             [DZYAPDatabase setNX:value key:key];
+        }
+        
+        if(callback)
+        {
+            [callback call:@[@{@"success":@(YES)}] thisObject:nil];
+        }
+        
+    }
+    else
+    {
+        if(callback)
+        {
+            [callback call:@[@{@"success":@(NO)}] thisObject:nil];
+        }
+    }
+    
+}
+
+- (void)setSecure:(id)args
+{
+    
+    NSString *key;
+    id value;
+    KrollCallback *callback;
+    
+    ENSURE_ARRAY(args);
+    ENSURE_ARG_AT_INDEX(key, args, 0, NSString);
+    
+    value = [args objectAtIndex:1];
+    callback = [args count] > 2 ? [args objectAtIndex:2] : nil;
+    
+    if(key && value)
+    {
+        [DZYAPDatabase setSecure:value key:key];
+        if(callback)
+        {
+            [callback call:@[@{@"success":@(YES)}] thisObject:nil];
+        }
+    }
+    else
+    {
+        if(callback)
+        {
+            [callback call:@[@{@"success":@(NO)}] thisObject:nil];
+        }
+    }
+    
+}
+
+- (void)setSecureInCollection:(id)args
+{
+    NSString *key, *collection;
+    id value;
+    KrollCallback *callback;
+    
+    ENSURE_ARRAY(args);
+    
+    ENSURE_ARG_AT_INDEX(key, args, 0, NSString);
+    ENSURE_ARG_AT_INDEX(collection, args, 1, NSString);
+    
+    value = [args objectAtIndex:2];
+    callback = [args count] > 3 ? [args objectAtIndex:3] : nil;
+    
+    if(key && value)
+    {
+        
+        if(collection)
+        {
+            [DZYAPDatabase setSecure:value key:key collection:collection];
+        }
+        else
+        {
+            [DZYAPDatabase setSecure:value key:key];
         }
         
         if(callback)
